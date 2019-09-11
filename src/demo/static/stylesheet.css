@@ -1,0 +1,381 @@
+* {
+  -webkit-box-sizing: border-box;
+}
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428;
+  color: #333;
+  background-color: #fff;
+}
+
+/*.clust_icon{
+  float:left;
+  width: 33.3333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}*/
+
+.viz_medium_text{
+  width:99%;
+  margin-left: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color:#333;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 0px;
+}
+
+.viz_large_text{
+  width:99%;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  color:#333;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 0px;
+}
+
+/* need to move d3-tip into stypes */
+.d3-tip {
+  line-height: 1.25;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  max-width: 500px;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.icon_buttons{
+  color: #337ab7;
+}
+
+.sidebar_text{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.sidebar_button_text{
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.btn{
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-left: 0;
+}
+
+.btn-group-vertical > .btn.active {
+  z-index: 2;
+}
+
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group,
+.btn-group-vertical > .btn-group > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+}
+
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn {
+  font-family: inherit;
+  display: inline-block;
+  /*padding: 6px 12px;*/
+  margin-bottom: 0;
+  /*font-size: 14px;*/
+  /*font-weight: normal;*/
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.toggle_row_order{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.modal-backdrop{
+  display: none;
+}
+
+.modal-backdrop.fade{
+  display: none;
+}
+
+.modal-backdrop.in{
+  display: none;
+}
+
+/* sidebar tooltips */
+.sidebar_tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.sidebar_tooltip .sidebar_tooltip_text {
+  visibility: hidden;
+  width: 120px;
+  background: rgba(0, 0, 0, 1);
+  /*opacity: 0.95;*/
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1000;
+  top:100%;
+  /*left:-400%;*/
+  font-size: 15px;
+  /*margin-left: 60px;*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sidebar_tooltip:hover .sidebar_tooltip_text {
+  visibility: visible;
+}
+
+div.awesomplete > ul {
+  z-index: 99;
+}
+
+
+.form-control {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+abbr, abbr[data-title] {cursor:help;
+  text-decoration:none;
+  border-bottom:1px dotted rgba(0,0,0,0.4);
+  border-radius:8px;}
+abbr:hover {background:rgba(0,0,0,0.1);}
+abbr[data-title]:hover {
+  position:relative;
+  background:rgba(0,255,0,.2);
+  }
+abbr[data-title]:hover:after {position:absolute;
+  left:16px; top:calc(100% + .8em); z-index:20;
+  content:attr(data-title);
+  white-space:nowrap;
+  padding:2px 4px 0;
+  border:1px solid green; border-radius:6px;
+  box-shadow:2px 2px 4px rgba(0,128,0,.5);
+  background:linear-gradient(#dfd, #bfb);
+  color:#030;}
+div.tip {
+  display:inline-block !important;
+  margin:0; background:red;}
+abbr span, div.tip div {
+  position:absolute;
+  display:none;
+  z-index:10;
+  padding:2px 4px 0; margin:1.5em 0 0 8px;
+  max-width:0px;
+  border:1px solid green;
+  border-radius:6px;
+  box-shadow:2px 2px 4px rgba(0,128,0,.5);
+  background:linear-gradient(#dfd, #bfb);
+  visibility:hidden; opacity:0;
+  -webkit-transition:
+    visibility 2s linear,
+    opacity 2s linear;
+  transition:
+    visibility 2s linear,
+    opacity 2s linear;
+  }
+abbr:hover span, div.tip:hover div {
+  display:inline-block;
+  max-width:300px;
+  visibility:visible; opacity:1;
+  -webkit-transition-delay:0s;
+  transition-delay:0s;
+  }
+
+/*For loading Callback Waiting css*/
+._dash-loading-callback {
+  font-family: sans-serif;
+  padding-top: 50px;
+  color: rgb(90, 90, 90);
+
+  -webkit-animation: fadein 0.5s ease-in 7s forwards; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.5s; /* Firefox < 16 */
+      -ms-animation: fadein 0.5s; /* Internet Explorer */
+       -o-animation: fadein 0.5s; /* Opera < 12.1 */
+          animation: fadein 0.5s ease-in 7s forwards;
+
+
+
+  /* The banner */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  cursor: progress;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

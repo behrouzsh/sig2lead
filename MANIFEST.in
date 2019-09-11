@@ -1,0 +1,5 @@
+include cgrammer/cgrammer.min.js
+include cgrammer/cgrammer.dev.js
+include cgrammer/metadata.json
+include cgrammer/package.json
+include README.md
