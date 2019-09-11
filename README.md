@@ -6,11 +6,11 @@ cgrammer is a react component added as a component to dash environment.
 ---Here are the steps to run the project
 
 
-virtualenv venv
-. venv/bin/activate
-pip install -r requirements.txt
-pip install -r tests/requirements.txt
-python usage.py
+1. virtualenv venv
+2. . venv/bin/activate
+3. pip install -r requirements.txt
+4. pip install -r tests/requirements.txt
+5. python usage.py
 
 
 ---Extra notes from plotly
