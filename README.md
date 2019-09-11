@@ -109,25 +109,25 @@ If you have selected install_dependencies during the prompt, you can skip this p
 6. Extra notes, What I did:
 These are from this page: https://dash.plot.ly/react-for-python-developers
 
-cookiecutter https://github.com/mbkupfer/dash-component-boilerplate.git (make cgrammer)
-cd cgrammer
-npm run build:js
-npm run build:js-dev
-npm run build:py
-npm run build:all
-npm run start
+	1. cookiecutter https://github.com/mbkupfer/dash-component-boilerplate.git (make cgrammer)
+	2. cd cgrammer
+	3. npm run build:js
+	4. npm run build:js-dev
+	5. npm run build:py
+	6. npm run build:all
+	7. npm run start
 
-These are from this page: https://community.plot.ly/t/using-external-js-libraries-in-custom-dash-component/11653/13
+7. These are from this page: https://community.plot.ly/t/using-external-js-libraries-in-custom-dash-component/11653/13
 
-npm install clustergrammer
-Change the code based on the description in the website
+	1. npm install clustergrammer
+	2. Change the code based on the description in the website
 
-These are from readme.md
-npm install
-virtualenv venv
-. venv/bin/activate
-pip install -r requirements.txt
-pip install -r tests/requirements.txt
-npm run build:all
-"Get mult_view.json and put it in project"
-python usage.py
+	3. These are from readme.md
+	4. npm install
+	5. virtualenv venv
+	6. . venv/bin/activate
+	7. pip install -r requirements.txt
+	8. pip install -r tests/requirements.txt
+	9. npm run build:all
+	10. "Get mult_view.json and put it in project"
+	11. python usage.py
