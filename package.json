@@ -21,7 +21,7 @@
     "clustergrammer": "^1.19.5",
     "ramda": "^0.25.0",
     "d3": "^3.5.15",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
