@@ -92,7 +92,7 @@ pycparser==2.17
 PyDispatcher==2.0.5
 Pygments==2.2.0
 pyiptmnet==0.1.2
-pyOpenSSL==16.2.0
+pyOpenSSL==17.5.0
 pyparsing==2.2.0
 pypirc==1.0.4
 pypiTest==0.1.0
