@@ -19,7 +19,7 @@ clustergrammer==1.13.5
 conda==4.3.16
 configparser==3.5.0
 constantly==15.1.0
-cookiecutter==1.6.0
+cookiecutter==2.1.1
 cryptography==1.7.1
 cssselect==1.0.1
 dash==0.43.0
