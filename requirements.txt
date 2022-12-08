@@ -11,7 +11,7 @@ backports.functools-lru-cache==1.5
 backports.shutil-get-terminal-size==1.0.0
 binaryornot==0.4.4
 bleach==2.0.0
-certifi==2019.3.9
+certifi==2022.12.7
 cffi==1.9.1
 chardet==3.0.4
 Click==7.0
